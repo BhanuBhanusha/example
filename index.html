@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="script1.js"></script>
+  <link rel="stylesheet" href="style1.css">
 <title>
   example
 </title>
@@ -38,34 +40,6 @@
 </address>
 <p><cite>Amaran</cite> by Rajkumar Periasamy </p>
 <bdo dir="rtl">bi directional override</bdo>
-<style>
-  .navi li{
-    float:left;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .navi ul{
-     background-color: black;
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-    overflow: hidden;
-  }
-  .navi li a{
-    display: block;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-  }
-  .navi li a:hover{
-    background-color: rgb(49, 54, 54);
-  }
- 
-
-h1 {color: blue;}
-img {height: 200px ;}
-img {width: 200px;}
-</style>
 
 <p style="color:red">colour change using inline style</p>
 <a href="https://www.w3schools.com/html/html_links.asp">html link
@@ -78,64 +52,6 @@ img {width: 200px;}
 <br>
     <a href="mailto:bhanubhanusha379@gmail.com">send mail</a>
 <h3 id="c7">chapter 7</h3>
-
-<style>
-a:link {
-  color: green;
-  text-decoration: none;
-  
-}
-a:visited{
-  color: green;
-}
-a:hover {
-  color: red;
-  text-decoration: underline;
-}
-a:active {
-  color: yellow;
-  text-decoration: underline;
-}
-.imgs{
-  width: 400px;
-  height: 400px;
-}
-.bk{
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvzWipLyqYhBPNv_SoWyEvbuVomd9R8gAGsA&s');
-  height:250px; 
-  width: 50%;
-  color:white; 
-  background-size: cover;
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-
-}
-body{
-  background-image: url('data:image/jpeg;base64,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');
-  background-size:100% 100%;
-}
-th,tr,td,table{
-  border:3px inset red;
-}
-th,td{
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-table{
-  border-spacing: 10px;
-}
-tr:hover{
-  background-color: rgb(189, 206, 192);
-  
-}
-caption{
-  margin-bottom: 10px;
-}
-
-</style>
-
 
 <h2>Link Colors</h2>
 
@@ -173,7 +89,7 @@ caption{
   </tr>
 </table>
 <h4>ordered list</h4>
-<ol>
+<ol type="i" start="1">
   <li>bhaskaran</li>
   <li>sajitha</li>
   <li>bhagi</li>
@@ -193,5 +109,35 @@ caption{
   <dd>keetchu</dd>
   <dd>chingu</dd>
 </dl>
+<p>hi <span style="color: rgb(0, 0, 0);font-weight: bold;">everyone</span></p>
+<div class="grid-container">
+  <div style="background-color: chartreuse;">iam bhanusha</div>
+  <div style="background-color: cornflowerblue;">frst yr cyber security student</div>
+  <div style="background-color: darkkhaki;">dr.mcet</div>
+</div>
+<br>
+<button onclick="myFunction()">hide nicknames</button>
+<h4>bhanusha</h4>
+<div class="niname">bachuu</div>
+<h4>nandhini</h4>
+<div class="niname">nachuu</div>
+<h4>vinothini</h4>
+<div class="niname">pichuu</div>
+<h1 id="myName">Iam Bhanusha</h1>
+<button onclick="changeName()">change name</button>
+<br>
+<iframe src="index.html" name="catpics" height="400px" width="80%"></iframe>
+<br>
+<h1><a href="https://www.pexels.com/search/cats/" target="catpics" style="color:rgb(255, 0, 128);">cat pics</a></h1>
+<p id="date"></p>
+<button onclick="displayDate()">display date</button>
+<br>
+<center>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6r3qvfBj243GbZViIVIxySMESOY4k88wmPQ&s" id="bulbimg" width="100px" height="100px">
+<br>
+<button onclick="light(1)" >light on</button>
+<button onclick="light(0)" >light off</button>
+ </center>
+</body>
 </html>
 
